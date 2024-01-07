@@ -3102,7 +3102,7 @@ td:last-child {
  * ------------------------------------------------------------------- */
 .grid-list-items {
 	--gap                : calc(var(--gutter) * 2);
-	--min-width          : 360px;
+	--min-width          : 300px;
 	display              : grid;
 	grid-template-columns: repeat(auto-fit, minmax(min(var(--min-width), 100%), 1fr));
 	-moz-column-gap      : var(--gap);
