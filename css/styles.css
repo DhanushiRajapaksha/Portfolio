@@ -4273,7 +4273,7 @@ td:last-child {
 }
 
 .s-footer__about>* {
-	width: min(100%, 560px);
+	width: min(100%, 800px);
 }
 
 .s-footer__bottom {
