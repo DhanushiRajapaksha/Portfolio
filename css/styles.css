@@ -4269,7 +4269,7 @@ td:last-child {
 }
 
 .s-footer__block {
-	margin-bottom: var(--vspace-0_5);
+	margin-bottom: var(--vspace-0_8);
 }
 
 .s-footer__about>* {
