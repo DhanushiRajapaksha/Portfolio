@@ -3106,7 +3106,7 @@ td:last-child {
 	display              : grid;
 	grid-template-columns: repeat(auto-fit, minmax(min(var(--min-width), 100%), 1fr));
 	-moz-column-gap      : var(--gap);
-	column-gap           : 29px;
+	column-gap           : var(--gap);
 }
 
 .grid-list-items__item {
