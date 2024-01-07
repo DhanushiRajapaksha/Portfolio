@@ -4305,7 +4305,7 @@ td:last-child {
 /* ------------------------------------------------------------------- 
  * ## newsletter
  * ------------------------------------------------------------------- */
-.s-footer__newsletter input[type=email] {
+/*.s-footer__newsletter input[type=email] {
 	margin-bottom   : var(--vspace-0_5);
 	background-color: var(--color-gray-18);
 }
@@ -4324,7 +4324,7 @@ td:last-child {
 	font-weight: 400;
 	line-height: var(--vspace-0_75);
 	color      : var(--color-1);
-}
+}*/
 
 /* ------------------------------------------------------------------- 
  * ## copyright
