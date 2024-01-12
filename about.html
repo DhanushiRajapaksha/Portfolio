@@ -351,13 +351,41 @@
                                         <br>
                                         
                                         <div style="text-align:center">
-                                          <span class="dot" onclick="currentSlide(1)"></span> 
-                                          <span class="dot" onclick="currentSlide(2)"></span> 
-                                          <span class="dot" onclick="currentSlide(3)"></span>
-                                          <span class="dot" onclick="currentSlide(4)"></span>
+                                          <span class="dot" onclick="currentSlider(1)"></span> 
+                                          <span class="dot" onclick="currentSlider(2)"></span> 
+                                          <span class="dot" onclick="currentSlider(3)"></span>
+                                          <span class="dot" onclick="currentSlider(4)"></span>
                                         </div>
                                         
                                 </div>
+                                <script>
+                                    let slideIndexx = 1;
+                                    showSlides(slideIndexx);
+                                    
+                                    function plusSlides(n) {
+                                      showSlides(slideIndexx += n);
+                                    }
+                                    
+                                    function currentSlider(n) {
+                                      showSlides(slideIndexx = n);
+                                    }
+                                    
+                                    function showSlides(n) {
+                                      let i;
+                                      let slides = document.getElementsByClassName("mySlides");
+                                      let dots = document.getElementsByClassName("dot");
+                                      if (n > slides.length) {slideIndexx = 1}    
+                                      if (n < 1) {slideIndexx = slides.length}
+                                      for (i = 0; i < slides.length; i++) {
+                                        slides[i].style.display = "none";  
+                                      }
+                                      for (i = 0; i < dots.length; i++) {
+                                        dots[i].className = dots[i].className.replace(" active", "");
+                                      }
+                                      slides[slideIndexx-1].style.display = "block";  
+                                      dots[slideIndexx-1].className += " active";
+                                    }
+                                    </script>
                                 </div>
                                 <div class="grid-list-items__item list-items__item u-remove-bottom">
                                     <div class="list-items__item-header">
