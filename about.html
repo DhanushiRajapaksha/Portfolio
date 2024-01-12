@@ -318,74 +318,7 @@
                                     nam quae exercitationem cupiditate, provident ipsa delectus vero possimus reprehenderit quas ut officiis tempora voluptatum 
                                     quibusdam consectetur commodi!
                                     </p>
-                                    <div class="slideshow-container">
-
-                                        <div class="mySlides fade">
-                                          <div class="numbertext">1 / 4</div>
-                                          <img src="images/New folder/Explore the beauty of (2).png" style="width:100%">
-                                          
-                                        </div>
-                                        
-                                        <div class="mySlides fade">
-                                          <div class="numbertext">2 / 4</div>
-                                          <img src="images/New folder/Project Managment (3).png" style="width:100%">
-                                         
-                                        </div>
-                                        
-                                        <div class="mySlides fade">
-                                          <div class="numbertext">3 / 4</div>
-                                          <img src="images/New folder/Teaching.png" style="width:100%">
-                                          
-                                        </div>
-                                        
-                                        <div class="mySlides fade">
-                                            <div class="numbertext">4 / 4</div>
-                                            <img src="images/New folder/Awareness.png" style="width:100%">
-                                            
-                                          </div>
-
-                                        <a class="prev" onclick="plusSlides(-1)">❮</a>
-                                        <a class="next" onclick="plusSlides(1)">❯</a>
-                                        
-                                        </div>
-                                        <br>
-                                        
-                                        <div style="text-align:center">
-                                          <span class="dot" onclick="currentSlider(1)"></span> 
-                                          <span class="dot" onclick="currentSlider(2)"></span> 
-                                          <span class="dot" onclick="currentSlider(3)"></span>
-                                          <span class="dot" onclick="currentSlider(4)"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <script>
-                                    let slideIndexx = 1;
-                                    showSlides(slideIndexx);
-                                    
-                                    function plusSlides(n) {
-                                      showSlides(slideIndexx += n);
-                                    }
-                                    
-                                    function currentSlider(n) {
-                                      showSlides(slideIndexx = n);
-                                    }
-                                    
-                                    function showSlides(n) {
-                                      let i;
-                                      let slides = document.getElementsByClassName("mySlides");
-                                      let dots = document.getElementsByClassName("dot");
-                                      if (n > slides.length) {slideIndexx = 1}    
-                                      if (n < 1) {slideIndexx = slides.length}
-                                      for (i = 0; i < slides.length; i++) {
-                                        slides[i].style.display = "none";  
-                                      }
-                                      for (i = 0; i < dots.length; i++) {
-                                        dots[i].className = dots[i].className.replace(" active", "");
-                                      }
-                                      slides[slideIndexx-1].style.display = "block";  
-                                      dots[slideIndexx-1].className += " active";
-                                    }
-                                    </script>
+                                   <img src="images/New folder/Explore the beauty of (2).png" class="slideshow-container"
                                 </div>
                                 <div class="grid-list-items__item list-items__item u-remove-bottom">
                                     <div class="list-items__item-header">
